@@ -23,7 +23,8 @@ It would be nice to have a data check sheet like below to organize the process.
 What you need to download beforehand are:
 
 For each country `**/Source`
-- ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles) 
+- ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
+- [GRID3 Settlement layer Version 1](https://data.grid3.org/) V2 Settlement layer does not work for this pipeline.
 - [WorldPop raster](https://www.worldpop.org/)
 - [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
 
