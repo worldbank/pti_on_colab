@@ -31,10 +31,10 @@ PUT all available raw data in the generated directories( `**/Source` ). For exam
 It would be nice to have a data check sheet like below to organize the process.
 What you need to download beforehand are:
 - ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
-- WorldPop raster
-- FEWS Livelihood or Climate Zone layers
-- ACLED as an ESRI Shapefile format (this should be stored in `data/common`. In the code, default name is `ACLED_1997_202304_AFR.shp`)
-- MapSPAM data as geotiff format (this should be stored in `data/common/MapSPAM_global_sum`)
+- [WorldPop raster](https://www.worldpop.org/)
+- [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
+- [ACLED](https://acleddata.com/) as an ESRI Shapefile format (this should be stored in `data/common`. In the code, default name is `ACLED_1997_202304_AFR.shp`)
+- [MapSPAM](https://mapspam.info/) data as geotiff format (this should be stored in `data/common/MapSPAM_global_sum`)
 The MapSPAM raster images should be a set of:
 `HarvArea_2000_Irrigated.tif`
 `HarvArea_2010_allTech.tif`
