@@ -33,15 +33,28 @@ What you need to download beforehand are:
 - ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
 - WorldPop raster
 - FEWS Livelihood or Climate Zone layers
-- ACLED (this should be stored in `data/common`)
-- MapSPAM data (this should be stored in `data/common`)
+- ACLED as an ESRI Shapefile format (this should be stored in `data/common`. In the code, default name is `ACLED_1997_202304_AFR.shp`)
+- MapSPAM data as geotiff format (this should be stored in `data/common/MapSPAM_global_sum`)
+The MapSPAM raster images should be a set of:
+`HarvArea_2000_Irrigated.tif`
+`HarvArea_2010_allTech.tif`
+`HarvArea_2017_Irrigated.tif`
+`PhysArea_2000_allTech.tif`
+`PhysArea_2000_Irrigated.tif`
+`PhysArea_2005_allTech.tif`
+`PhysArea_2005_Irrigated.tif`
+`PhysArea_2010_Irrigated.tif`
+`PhysArea_2017_allTech.tif`
+`PhysArea_2017_Irrigated.tif`
+`Val_2017_allTech.tif`
+`Val_2017_Irrigated.tif`
 
 ## Each country process:
 (3) `ADM_prep.ipynb` This is a good tool for preparing a fine ADM-3 shapefile, which is the base of all zonal statistics for other steps. As the condition of ADM-3 Shapefile can vary across target countries, you may need to modify this tool if needed.
 
 (4) `Auxilliary_Prep.ipynb` Process GRID3 Settlement layer V1 and WorldPop raster. Note that GRID3 now provides a version 2 (V2) settlement layer, but this does not work for the module. Be sure that you get the V1 layer.
 
-(5) `Conflict.ipynb` Process the ACLED layer. The layer is stored in data > common. If you need to update the ACLED layer, replace the old one in this folder.
+(5) `Conflict.ipynb` Process the ACLED layer (ESRI Shapefile format). The layer is stored in `data > common`. If you need to update the ACLED layer, replace the old one in this folder.
 
 (6) `LivelihoodZones_PopWeighted.ipynb` Process FEWS Livelihood zone or Climate Zone layers. The FEWS is prefered but in case it is not available for your target country, use a Climate Zone layer. You can 
 
