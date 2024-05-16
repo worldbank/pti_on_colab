@@ -1,4 +1,4 @@
-# oti_on_colab (PTI raw data prep on Google Colab)
+# pti_on_colab (PTI raw data prep on Google Colab)
 Prepare the PTI raw data of the country of interest solely on the Google Colab environment with a complete Pythonic approach.
 
 
