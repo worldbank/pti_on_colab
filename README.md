@@ -14,7 +14,7 @@ Prepare the PTI raw data of the country of interest solely on the Google Colab e
 Put the PTI folder with all codes in your own Google Drive:
 `/content/drive/MyDrive/Colab Notebooks/PTI/`
 
-## Required raw data
+## Required raw data:
 PUT all raw data in the generated directories( `**/Source` ). For example, a WorldPop raster of Senegal should be stored in
 `/content/drive/MyDrive/Colab Notebooks/PTI/data/SEN/WorldPop/Source`
 
@@ -70,11 +70,11 @@ The MapSPAM raster images should be a set of:
 
 
 ## Technical notes:
-TBA
+None.
 
-## Contributors
-- Eigo Tateishi (transplanting the original to the Colab ver)
-- Grace Doherty (the original coder)
-- Walker Kosmidou-Bradley (expert input)
+## Contributors:
+- Eigo Tateishi (transplanting the original to the Colab ver) / No longer working on this repo/project.
+- Grace Doherty (the original coder) / No longer working on this repo/project.
+- Walker Kosmidou-Bradley (expert input) / Contact person
 
 The World Bank (2024)
