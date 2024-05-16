@@ -18,13 +18,20 @@ Put the PTI folder with all codes in your own Google Drive:
 PUT all raw data in the generated directories( `**/Source` ). For example, a WorldPop raster of Senegal should be stored in
 `/content/drive/MyDrive/Colab Notebooks/PTI/data/SEN/WorldPop/Source`
 
-It would be nice to have a data check sheet like below to organize the process.
+It would be nice to have a data check sheet like below to organize the process. The CSV file of this table is in `materials`.
 
+![image](/materials/rawdata_summary_table.PNG)
+
+
+
+<br>
 What you need to download beforehand are:
 
 For each country `**/Source`
 - ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
-- [GRID3 Settlement layer Version 1](https://data.grid3.org/) [!WARNING]V2 Settlement layer does not work for this pipeline.
+- [GRID3 Settlement layer Version 1](https://data.grid3.org/)
+>[!WARNING]
+>V2 Settlement layer does not work for this pipeline.
 - [WorldPop raster](https://www.worldpop.org/)
 - [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
 
@@ -51,9 +58,10 @@ The MapSPAM raster images should be a set of:
 ## Common process
 (1) `config.ipynb` You can specify global parameters for all processes here by a target country. Renaming the config file, for example, 'config_SEN,' you can keep a config setting for the country (this case Senegal) next time you need to rework it. For the actual process, the name of the config file must be `config.ipynb`.
 
-[!NOTE]
-- NOTE1: In Specify the name of ADM3 SHP, every time select a proper option for each target country.
-- NOTE2: In Specify the name of the Livelihood Zone SHP, every time select a proper option for each target country. 
+>[!NOTE]
+>- In `Specify the name of ADM3 SHP`, every time select a proper option for each target country.
+>- In `Specify the name of the Livelihood Zone SHP`, every time select a proper option for each target country. 
+
 
 (2) `generate_dir.ipynb` As the later PTI visualization process needs a specifically designed directory structure for the PTI team, this tool automatically generates the specified directories under `data`  based on the target country list defined in `config.ipynb` (ie., `config.l_tar_ISO`). 
 
@@ -74,8 +82,8 @@ The MapSPAM raster images should be a set of:
 None.
 
 ## Contributors:
-- Eigo Tateishi (transplanting the original to the Colab ver) / No longer working on this repo/project.
-- Grace Doherty (the original coder) / No longer working on this repo/project.
-- Walker Kosmidou-Bradley (expert input) / Contact person
+- `Eigo Tateishi` (transplanting the original to the Colab ver) / No longer working on this repo/project.
+- `Grace Doherty` (the original coder) / No longer working on this repo/project.
+- `Walker Kosmidou-Bradley` (project leader, expert input) / Contact person
 
 The World Bank (2024)
