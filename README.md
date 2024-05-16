@@ -24,7 +24,7 @@ What you need to download beforehand are:
 
 For each country `**/Source`
 - ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
-- [GRID3 Settlement layer Version 1](https://data.grid3.org/) V2 Settlement layer does not work for this pipeline.
+- [GRID3 Settlement layer Version 1](https://data.grid3.org/) [!WARNING]V2 Settlement layer does not work for this pipeline.
 - [WorldPop raster](https://www.worldpop.org/)
 - [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
 
@@ -51,6 +51,7 @@ The MapSPAM raster images should be a set of:
 ## Common process
 (1) `config.ipynb` You can specify global parameters for all processes here by a target country. Renaming the config file, for example, 'config_SEN,' you can keep a config setting for the country (this case Senegal) next time you need to rework it. For the actual process, the name of the config file must be `config.ipynb`.
 
+[!NOTE]
 - NOTE1: In Specify the name of ADM3 SHP, every time select a proper option for each target country.
 - NOTE2: In Specify the name of the Livelihood Zone SHP, every time select a proper option for each target country. 
 
