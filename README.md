@@ -1,16 +1,12 @@
 # PTI_on_Colab (PTI raw data prep on Google Colab)
-Prepare the PTI raw data of the coutnry of interest solely on the Google Colab environment with a complete Pythonic approach.
+Prepare the PTI raw data of the country of interest solely on the Google Colab environment with a complete Pythonic approach.
 
 
 ## Structure of the pipeline:
-•	/content/drive/MyDrive/Colab Notebooks/PTI/OLD config files
-Just stored the country config file for the previous work. Just reference.
-•	/content/drive/MyDrive/Colab Notebooks/PTI/OLDversion
-Original codes from Grace. For debugging purposes.
-•	/content/drive/MyDrive/Colab Notebooks/PTI/data
-All raw data and products will be stored here.
-•	/content/drive/MyDrive/Colab Notebooks/PTI/tools.py
-Common Python tool. No need to open it.
+
+
+- `data` All raw data and products will be stored here.
+- `tools.py` Common Python tool. No need to open it.
 
 
 ## Quick start:
