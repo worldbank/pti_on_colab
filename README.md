@@ -21,8 +21,9 @@ PUT all raw data in the generated directories( `**/Source` ). For example, a Wor
 It would be nice to have a data check sheet like below to organize the process.
 
 What you need to download beforehand are:
+
 For each country `**/Source`
-- ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
+- ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles) 
 - [WorldPop raster](https://www.worldpop.org/)
 - [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
 
@@ -30,18 +31,18 @@ Common
 - [ACLED](https://acleddata.com/) as an ESRI Shapefile format (this should be stored in `data/common`. In the code, default name is `ACLED_1997_202304_AFR.shp`)
 - [MapSPAM](https://mapspam.info/) data as geotiff format (this should be stored in `data/common/MapSPAM_global_sum`)
 The MapSPAM raster images should be a set of:
-`HarvArea_2000_Irrigated.tif`
-`HarvArea_2010_allTech.tif`
-`HarvArea_2017_Irrigated.tif`
-`PhysArea_2000_allTech.tif`
-`PhysArea_2000_Irrigated.tif`
-`PhysArea_2005_allTech.tif`
-`PhysArea_2005_Irrigated.tif`
-`PhysArea_2010_Irrigated.tif`
-`PhysArea_2017_allTech.tif`
-`PhysArea_2017_Irrigated.tif`
-`Val_2017_allTech.tif`
-`Val_2017_Irrigated.tif`
+  - `HarvArea_2000_Irrigated.tif`
+  - `HarvArea_2010_allTech.tif`
+  - `HarvArea_2017_Irrigated.tif`
+  - `PhysArea_2000_allTech.tif`
+  - `PhysArea_2000_Irrigated.tif`
+  - `PhysArea_2005_allTech.tif`
+  - `PhysArea_2005_Irrigated.tif`
+  - `PhysArea_2010_Irrigated.tif`
+  - `PhysArea_2017_allTech.tif`
+  - `PhysArea_2017_Irrigated.tif`
+  - `Val_2017_allTech.tif`
+  - `Val_2017_Irrigated.tif`
 
 
 ## Basic workflow:
