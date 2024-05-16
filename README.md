@@ -84,6 +84,6 @@ None.
 ## Contributors:
 - `Eigo Tateishi` (transplanting the original to the Colab ver) / No longer working on this repo/project.
 - `Grace Doherty` (the original coder) / No longer working on this repo/project.
-- `Walker Kosmidou-Bradley` (project leader, expert input) / Contact person
+- :star:`Walker Kosmidou-Bradley` (project leader, expert input) / Contact person
 
 The World Bank (2024)
