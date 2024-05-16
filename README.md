@@ -14,25 +14,19 @@ Prepare the PTI raw data of the country of interest solely on the Google Colab e
 Put the PTI folder with all codes in your own Google Drive:
 `/content/drive/MyDrive/Colab Notebooks/PTI/`
 
-
-## Basic workflow:
-
-## Common process
-(1) `config.ipynb` You can specify global parameters for all processes here by a target country. Renaming the config file, for example, 'config_SEN,' you can keep a config setting for the country (this case Senegal) next time you need to rework it. For the actual process, the name of the config file must be `config.ipynb`.
-
-- NOTE1: In Specify the name of ADM3 SHP, every time select a proper option for each target country.
-- NOTE2: In Specify the name of the Livelihood Zone SHP, every time select a proper option for each target country. 
-
-(2) `generate_dir.ipynb` As the later PTI visualization process needs a specifically designed directory structure for the PTI team, this tool automatically generates the specified directories under `data`  based on the target country list defined in `config.ipynb` (ie., `config.l_tar_ISO`). 
-
-PUT all available raw data in the generated directories( `**/Source` ). For example, a WorldPop raster of Senegal should be stored in
+## Required raw data
+PUT all raw data in the generated directories( `**/Source` ). For example, a WorldPop raster of Senegal should be stored in
 `/content/drive/MyDrive/Colab Notebooks/PTI/data/SEN/WorldPop/Source`
 
 It would be nice to have a data check sheet like below to organize the process.
+
 What you need to download beforehand are:
+For each country `**/Source`
 - ADM-3 shapefile (or ADM-1 – ADM3 Shapefiles)
 - [WorldPop raster](https://www.worldpop.org/)
 - [FEWS Livelihood](https://fews.net/data/livelihood-zones) or any Climate Zone layers (as an alternative)
+
+Common
 - [ACLED](https://acleddata.com/) as an ESRI Shapefile format (this should be stored in `data/common`. In the code, default name is `ACLED_1997_202304_AFR.shp`)
 - [MapSPAM](https://mapspam.info/) data as geotiff format (this should be stored in `data/common/MapSPAM_global_sum`)
 The MapSPAM raster images should be a set of:
@@ -49,6 +43,18 @@ The MapSPAM raster images should be a set of:
 `Val_2017_allTech.tif`
 `Val_2017_Irrigated.tif`
 
+
+## Basic workflow:
+
+## Common process
+(1) `config.ipynb` You can specify global parameters for all processes here by a target country. Renaming the config file, for example, 'config_SEN,' you can keep a config setting for the country (this case Senegal) next time you need to rework it. For the actual process, the name of the config file must be `config.ipynb`.
+
+- NOTE1: In Specify the name of ADM3 SHP, every time select a proper option for each target country.
+- NOTE2: In Specify the name of the Livelihood Zone SHP, every time select a proper option for each target country. 
+
+(2) `generate_dir.ipynb` As the later PTI visualization process needs a specifically designed directory structure for the PTI team, this tool automatically generates the specified directories under `data`  based on the target country list defined in `config.ipynb` (ie., `config.l_tar_ISO`). 
+
+
 ## Each country process:
 (3) `ADM_prep.ipynb` This is a good tool for preparing a fine ADM-3 shapefile, which is the base of all zonal statistics for other steps. As the condition of ADM-3 Shapefile can vary across target countries, you may need to modify this tool if needed.
 
@@ -58,7 +64,7 @@ The MapSPAM raster images should be a set of:
 
 (6) `LivelihoodZones_PopWeighted.ipynb` Process FEWS Livelihood zone or Climate Zone layers. The FEWS is prefered but in case it is not available for your target country, use a Climate Zone layer. You can 
 
-(7) `MapSPAM_to_ADM.ipynb` Process the MapSPAM layer. The layer is stored in data > common > MapSPAM_global_sum
+(7) `MapSPAM_to_ADM.ipynb` Process the MapSPAM geotiff images. The set of images should be stored in `data > common > MapSPAM_global_sum`. See the Required raw data section for details.
 
 
 ## Technical notes:
