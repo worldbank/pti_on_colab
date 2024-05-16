@@ -20,7 +20,7 @@ Put the PTI folder with all codes in your own Google Drive:
 
 ## Basic workflow:
 
-### Common process
+## Common process
 (1) 'config.ipynb' You can specify global parameters for all processes here by a target country. Renaming the config file, for example, 'config_SEN,' you can keep a config setting for the country (this case Senegal) next time you need to rework it (see inside the 'OLD config files' for example). For the actual process, the name of the config file must be 'config.ipynb.'
 
 NOTE1: In Specify the name of ADM3 SHP, every time select a proper option for each target country.
@@ -46,10 +46,10 @@ Each country process:
 (7) MapSPAM_to_ADM.ipynb -> Process the MapSPAM layer. The layer is stored in data > common > MapSPAM_global_sum
 
 
-##Technical notes:
+## Technical notes:
 TBA
 
-##Contributors
+## Contributors
 - Eigo Tateishi (transplanting the original to the Colab ver)
 - Grace Doherty (the original coder)
 - Walker Kosmidou-Bradley (expert input)
